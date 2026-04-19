@@ -673,6 +673,17 @@ ul {
   align-items: center;
 }
 
+.developer-credit a {
+  color: #64748b;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.developer-credit a:hover {
+  color: var(--color-primary);
+}
+
 .social-links {
   display: flex;
   gap: 15px;
