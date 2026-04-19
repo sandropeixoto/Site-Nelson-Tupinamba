@@ -36,4 +36,22 @@ document.addEventListener("DOMContentLoaded", () => {
   animatedElements.forEach((el) => {
     observer.observe(el);
   });
+
+  // Sticky Call-to-Action (Floating Button) logic
+  const mobileCta = document.getElementById("mobile-cta");
+
+  if (mobileCta) {
+    window.addEventListener("scroll", () => {
+      const scrollHeight = document.documentElement.scrollHeight;
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;
+      const clientHeight = document.documentElement.clientHeight;
+
+      // Check if scrolled more than 50%
+      if (scrollTop > (scrollHeight - clientHeight) / 2) {
+        mobileCta.classList.add("show");
+      } else {
+        mobileCta.classList.remove("show");
+      }
+    });
+  }
 });
