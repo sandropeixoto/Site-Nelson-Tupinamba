@@ -1,0 +1,12 @@
+# Ignore system and framework directories
+.aiox-core/
+.agent/
+.antigravity/
+.claude/
+.codex/
+.cursor/
+.gemini/
+.github/agents/
+node_modules/
+dist/
+build/
